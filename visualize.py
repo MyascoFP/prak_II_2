@@ -43,7 +43,7 @@ def visualize_graph(structure, limit=None):
     # --- Определяем круги для shell_layout ---
     shells = [main_users, first_level, second_level]
 
-    # --- Радиальное расположение (shell_layout, а не kamada_kawai) ---
+    # --- Радиальное расположение ---
     pos = nx.shell_layout(G, nlist=shells)
 
     # --- Цвета и размеры ---
